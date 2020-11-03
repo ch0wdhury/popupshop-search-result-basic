@@ -19,7 +19,6 @@ html, body {
     background-color: #18bc9c;
     border-radius: 0.25rem;
 }
-
 a {
 	text-decoration: none;
 	transition: .5s ease;
@@ -104,6 +103,10 @@ a:hover {
 /*Header Nav Section Element Starts*/
 header {
 	padding-top: 10px;
+}
+.header-border {
+	border-bottom: 1px solid #EAEAE7;
+	padding-bottom: 20px;
 }
 .navbar {
 	padding-left: 0;
