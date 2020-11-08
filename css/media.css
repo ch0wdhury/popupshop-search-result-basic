@@ -358,6 +358,42 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.listing-page-main-title h2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.listing-page-space-feature span {
+		font-size: 16px;
+		padding: 5px;
+		height: 30px;
+		width: 30px;
+	}
+	.listing-page-space-feature h5 {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 35px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 38px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 38px;
+	}
+	.listing-page-accordion-card {
+	    padding: 10px 15px;
+	}
+	.listing-page-booking-request-box {
+		padding: 22px 15px 35px 15px;
+	}
+	.listing-page-right-content-card-body {
+		padding: 22px 5px 10px 15px;
+	}
+	.listing-page-calendar {
+	    padding: 30px 5px;
+	    width: 100%;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -594,6 +630,19 @@
 	.city-search-result-content-map {
 	    padding-left: 0;
 	    padding-right: 0;
+	}
+	.listing-page-main-title h2 {
+		font-size: 30px;
+		line-height: 28px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 32px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 32px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 32px;
 	}
 }
 /* Medium devices (tablets, 768px and up) */
@@ -843,6 +892,18 @@
 		width: 100%;
 		position: relative;
 	}
+	.listing-page-main-title h2 {
+		font-size: 30px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 50px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 50px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 50px;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -949,6 +1010,22 @@
 	.city-search-result-content-map {
 	    padding-left: 0;
 	    padding-right: 0;
+	}
+	.listing-page-main-title h2 {
+		font-size: 35px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 35px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 35px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 35px;
+	}
+	.listing-page-calendar {
+	    padding: 30px 10px;
+	    width: 112%;
 	}
 }
 
