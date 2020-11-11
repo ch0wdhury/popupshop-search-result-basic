@@ -635,7 +635,9 @@
 		width: 650px;
 	}
 	.save-search-float-section {
-		width: 100%;
+		width: 98%;
+		position: absolute;
+		bottom: 2%;
 	}
 	.save-search-modal-body {
 		padding: 40px 70px;
@@ -850,7 +852,7 @@
 		margin-top: 10px;
 	}
 	.search-page-result {
-		height: 68%;
+		height: 80vh;
 	}
 	.search-page-result-image img {
 		height: auto;
@@ -912,15 +914,14 @@
 	    margin-top: 0px;
 	    width: 100%;
 	}
-	.city-search-result-content-map {
-	    padding-left: 0;
-	    padding-right: 0;
-	    height: 100%;
-	}
-	.search-page-result {
+/*	.search-page-result {
 		height: 100%;
 		width: 100%;
 		position: relative;
+	}*/
+	.city-search-result-content-map {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.listing-page-main-title h2 {
 		font-size: 30px;
