@@ -637,7 +637,9 @@
 	.save-search-float-section {
 		width: 98%;
 		position: absolute;
-		bottom: 2%;
+		bottom: -10px;
+		margin-left: 5px;
+		padding: 10px 10px 10px 20px;
 	}
 	.save-search-modal-body {
 		padding: 40px 70px;
