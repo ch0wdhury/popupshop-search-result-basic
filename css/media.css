@@ -394,6 +394,33 @@
 	    padding: 30px 5px;
 	    width: 100%;
 	}
+	.booking-page-title-section h2 {
+		font-size: 30px;
+	}
+	.booking-page-card-body {
+		padding: 20px 10px;
+	}
+	.booking-page-card-body h4 {
+		font-size: 16px;
+	}
+	.booking-page-card-body h6 {
+		font-size: 14px;
+	}
+	.booking-page-card-body h5 {
+		font-size: 14px;
+	}
+	.booking-page-total-price {
+		font-size: 18px!important;
+	}
+	.booking-page-navbar-area .nav .nav-link {
+		font-size: 12px;
+	}
+	.booking-page-user-login-option h4 {
+		font-size: 14px;
+	}
+	.radio {
+		padding: 16px 14px 16px 14px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -643,6 +670,9 @@
 	}
 	.listing-page-month-bars ul li span {
 		width: 32px;
+	}
+	.booking-page-title-section h2 {
+		font-size: 40px;
 	}
 }
 /* Medium devices (tablets, 768px and up) */
@@ -903,6 +933,27 @@
 	}
 	.listing-page-month-bars ul li span {
 		width: 50px;
+	}
+	.booking-page-title-section h2 {
+		font-size: 40px;
+	}
+	.booking-page-card-body {
+		padding: 20px 10px;
+	}
+	.booking-page-card-body h4 {
+		font-size: 16px;
+	}
+	.booking-page-card-body h6 {
+		font-size: 14px;
+	}
+	.booking-page-card-body h5 {
+		font-size: 14px;
+	}
+	.booking-page-total-price {
+		font-size: 18px!important;
+	}
+	.booking-page-navbar-area .nav .nav-link {
+		font-size: 12px;
 	}
 }
 
