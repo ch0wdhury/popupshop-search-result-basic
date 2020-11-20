@@ -313,12 +313,15 @@
 		width: 100%;
 		margin-bottom: 20px;
 	}
+	.search-page-left-content-full-wrapper {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 	.save-search-float-section {
 		padding: 20px 10px 25px 10px;
-		position: sticky;
-		bottom: 20px;
-		left: 0;
-		width: 100%;
+		width: 95%;
+		margin-left: 5px;
+		bottom: 3%;
 	}
 	.save-search-float-section h3 {
 		font-size: 20px;
@@ -346,12 +349,12 @@
 	.custom-form-input {
 		width: 100%;
 	}
-	.search-page-left-content {
+/*	.search-page-left-content {
 		position: relative;
 		overflow: hidden;
 		left: 0;
 		margin-left: 0;
-	}
+	}*/
 	.city-search-result-content-map-mobile {
 		height: 300px;
 		width: 100%;
@@ -368,6 +371,11 @@
 		height: 30px;
 		width: 30px;
 	}
+	.listing-page-space-feature img {
+		padding: 8px;
+		height: 30px;
+		width: 30px;
+	}	
 	.listing-page-space-feature h5 {
 		font-size: 12px;
 		line-height: 14px;
@@ -420,6 +428,27 @@
 	}
 	.radio {
 		padding: 16px 14px 16px 14px;
+	}
+	.file-upload-panel h4 {
+		position: absolute;
+		top: 25%;
+		left: 20px;
+	}
+	.file-upload-panel p {
+		padding-left: 15px;
+	}
+	.add-files-btn {
+		position: absolute;
+		bottom: 0;
+		left: 15px;
+	}
+	.start-upload-btn {
+		position: absolute;
+		bottom: 0;
+		left: 140px;
+	}
+	.success-page-additional-service-top {
+		padding: 10px 10px 10px 20px;
 	}
 }
 
@@ -636,10 +665,8 @@
 	}
 	.save-search-float-section {
 		width: 98%;
-		position: absolute;
-		bottom: -10px;
 		margin-left: 5px;
-		padding: 10px 10px 10px 20px;
+		padding: 10px 10px 25px 20px;
 	}
 	.save-search-modal-body {
 		padding: 40px 70px;
@@ -853,9 +880,6 @@
 	.city-search-result-content {
 		margin-top: 10px;
 	}
-	.search-page-result {
-		height: 80vh;
-	}
 	.search-page-result-image img {
 		height: auto;
 	}
@@ -883,11 +907,7 @@
 		margin-bottom: 5px;
 	}
 	.save-search-float-section {
-		padding: 15px 15px 15px 25px;
-		position: sticky;
-		bottom: 20px;
-		left: 0;
-		width: 99%;
+		margin-left: 10px;
 	}
 	.save-search-float-section h3 {
 		font-size: 20px;
@@ -921,10 +941,6 @@
 		width: 100%;
 		position: relative;
 	}*/
-	.city-search-result-content-map {
-		padding-left: 0;
-		padding-right: 0;
-	}
 	.listing-page-main-title h2 {
 		font-size: 30px;
 	}
@@ -957,6 +973,18 @@
 	}
 	.booking-page-navbar-area .nav .nav-link {
 		font-size: 12px;
+	}
+	.btn-concept-select {
+		padding: 12px 8px!important;
+	}
+	.success-page-additional-service-top {
+		padding: 10px 10px 10px 20px;
+	}
+	.success-page-accordion-content-border img {
+		width: 100%;
+	}
+	.inquire-modal-service-box {
+		padding: 16px 10px;
 	}
 }
 
@@ -1055,8 +1083,11 @@
 		margin-top: 15px;
 		width: 98%;
 	}
-	.search-page-left-content {
+	.search-page-left-content-full-wrapper {
 		margin-left: 25px;
+	}
+	.save-search-float-section {
+		margin-left: 15px;
 	}
 	.footer-social-icon ul:nth-child(2) li {
 		margin-right: 30px;
@@ -1080,6 +1111,9 @@
 	.listing-page-calendar {
 	    padding: 30px 10px;
 	    width: 112%;
+	}
+	.btn-concept-select {
+		padding: 12px 8px!important;
 	}
 }
 
