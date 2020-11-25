@@ -317,6 +317,9 @@
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+	.search-page-result-image img {
+		width: 100%;
+	}
 	.save-search-float-section {
 		padding: 20px 10px 25px 10px;
 		width: 95%;
@@ -449,6 +452,35 @@
 	}
 	.success-page-additional-service-top {
 		padding: 10px 10px 10px 20px;
+	}
+	.success-page-additional-service-top h3 {
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.success-page-additional-service-top p {
+		font-size: 12px;
+		line-height: 19px;
+	}
+	.success-page-additional-service-top a {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.success-additional-service-accordion svg {
+	    height: 45px;
+	}
+	.save-search-modal-content {
+	    width: 100%;
+	    z-index: 9999!important;
+	    position: relative;
+	}
+	.success-page-accordion-content-border img {
+		width: 130%;
+	}
+	.success-page-card-body-paddings {
+		padding-right: 0;
+	}
+	.left-margin-accordion-content-success {
+		margin-left: 10px;
 	}
 }
 
@@ -704,6 +736,9 @@
 	}
 	.booking-page-title-section h2 {
 		font-size: 40px;
+	}
+	.success-additional-service-accordion svg {
+	    height: 45px;
 	}
 }
 /* Medium devices (tablets, 768px and up) */
@@ -986,6 +1021,16 @@
 	.inquire-modal-service-box {
 		padding: 16px 10px;
 	}
+	.success-additional-service-accordion svg {
+	    height: 45px;
+	}
+	.success-page-accordion-content-border p {
+	    font-size: 12px;
+	}
+	.success-page-accordion-content-border img {
+		width: 130%;
+		margin: auto;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1115,9 +1160,59 @@
 	.btn-concept-select {
 		padding: 12px 8px!important;
 	}
+	.success-additional-service-accordion svg {
+	    height: 45px;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
+@media (min-width: 1200px) and (max-width: 1499.98px) {
+	.left-margin-accordion-content-success {
+		margin-left: -20px;
+	}
+}
+/* Extra large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) and (max-width: 1699.98px) {
+	.search-page-left-content {
+		flex: 0 0 52.333333%;
+	}
+	.save-search-float-section {
+		width: 48%;
+	}
+}
+/* Extra large devices (large desktops, 1700px and up) */
+@media (min-width: 1700px) and (max-width: 1899.98px) {
+	.search-page-left-content {
+		flex: 0 0 48.333333%;
+	}
+	.save-search-float-section {
+		width: 45%;
+	}
+}
+/* Extra large devices (large desktops, 1900px and up) */
+@media (min-width: 1900px) and (max-width: 2199.98px) {
+	.search-page-left-content {
+		flex: 0 0 40.333333%;
+	}
+	.save-search-float-section {
+		width: 38%;
+	}
+}
+/* Extra large devices (large desktops, 2200px and up) */
+@media (min-width: 2200px) and (max-width: 2499.98px) {
+	.search-page-left-content {
+		flex: 0 0 36.333333%;
+	}
+	.save-search-float-section {
+		width: 35%;
+	}
+}
+/* Extra large devices (large desktops, 2500px and up) */
+@media (min-width: 2500px) {
+	.search-page-left-content {
+		flex: 0 0 33.333333%;
+	}
+	.save-search-float-section {
+		width: 31%;
+	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-height-page">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -61,11 +61,17 @@
           <div class="col-12">
             <form action="#" class="city search-form">
                 <div class="form-row">
-                  <div class="form-group has-search col-xl col-md-12 col-sm-12 col-6 my-auto">
+                  <div class="form-group has-search col-xl col-md-12 col-sm-12 col-8 my-auto">
                     <span class="icon-search form-control-feedback"></span>
                     <input type="text" class="form-control custom-input-group" placeholder="London...">
                   </div>
-                  <div class="col-lg col-md-4 col-sm-6 col-12 my-auto">
+                  <div class="form-group col-4 my-auto d-sm-none d-block">
+                          <!-- Filter trigger for Mobile Lightbox -->
+                    <button type="button" class="btn btn-filter" data-toggle="modal" data-target="#filterMobileModal">
+                          MORE FILTERS &nbsp; <span class="icon-chevron-down"></span>
+                    </button>
+                  </div>
+                  <div class="col-lg col-md-4 col-sm-6 col-12 d-sm-flex d-none my-auto">
                     <select name="" id="" class="selectpicker city-search-select" multiple title="All industries">
                       <option value="">Leisure (Spa, Fitness, Bowling)</option>
                       <option value="">Fachmarkt (Non-Food)</option>
@@ -82,7 +88,7 @@
                       <option value="">Bars/Restaurants</option>
                     </select>
                   </div>
-                  <div class="col-lg col-md-4 col-sm-6 col-6 my-auto">
+                  <div class="col-lg col-md-4 col-sm-6 col-6 d-sm-flex d-none my-auto">
                     <select name="" id="" class="selectpicker city-search-select" multiple title="All Concepts">
                       <option value="">Sale (“Outlet/Retail”)</option>
                       <option value="">Concept Store (“Test a product/market/location”)</option>
@@ -92,173 +98,34 @@
                       <option value="">Gastro (Restaurant/Bar)</option>
                     </select>
                   </div>
-                  <div class="col-lg col-md-4 col-sm-6 col-6 my-auto">
+                  <div class="col-lg col-md-4 col-sm-6 col-6 d-sm-flex d-none my-auto">
                     <select name="" id="" class="selectpicker city-search-select">
                       <option value="">Any date</option>
                       <option value="">Any other</option>
                       <option value="">Anymore other</option>
                     </select>
                   </div>
-                  <div class="col-lg col-md-4 col-sm-6 col-6 my-auto">
+                  <div class="col-lg col-md-4 col-sm-6 col-6 d-sm-flex d-none my-auto">
                     <select name="" id="" class="selectpicker city-search-select">
                       <option value="">Any amount</option>
                       <option value="">5 000 - 10 000 CHF</option>
                       <option value="">15 000 - 20 000 CHF</option>
                     </select>
                   </div>
-                  <div class="col-lg col-md-4 col-sm-6 col-6 my-auto">
+                  <div class="col-lg col-md-4 col-sm-6 col-6 d-sm-flex d-none my-auto">
                     <select name="" id="" class="selectpicker city-search-select">
                       <option value="">0 - 3500 sq ft</option>
                       <option value="">3500 - 7000 sq ft</option>
                       <option value="">7000 - 12 000 sq ft</option>
                     </select>
                   </div>
-                  <div class="col-md col-sm-6 col-12">
+                  <div class="col-md col-sm-6 col-12 d-sm-flex d-none">
                     <div class="form-row">
                         <div class="form-group col-xl-6 col-lg-7 col-6 my-auto filter-right-border">
                           <!-- Filter trigger Lightbox -->
                         <button type="button" class="btn btn-filter" data-toggle="modal" data-target="#filterModal">
                           MORE FILTERS &nbsp; <span class="icon-chevron-down"></span>
                         </button>
-                            <!-- More Filter Lightbox -->
-                            <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
-                            <form action="#">
-                              <div class="modal-dialog filter-modal-dialogue">
-                                <div class="modal-content">
-                                  <div class="modal-header filter-modal-header">
-                                    <input type="reset" value="Clear all">
-                                    <h6 class="modal-title text-center" id="filterModalLabel">Filters (0)</h6>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true"><span class="icon-close-light"></span></span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body filter-modal-body">
-                                    <label>Sort by</label>
-                                    <select name="" id="" class="selectpicker city-search-select">
-                                      <option value="">Recommended</option>
-                                      <option value="">Option 1</option>
-                                      <option value="">Option 2</option>
-                                    </select>
-                                    <hr class="my-4">
-                                      <label class="mb-3">Industries</label>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Leisure (Spa, Fitness, Bowling)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Fachmarkt (Non-Food)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Fashion
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Watches, Jewellry, Eyeglasses
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">(Home) Electronics
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Food Experience - Butcher, Bakery, Wine shop etc.
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Groceries (Migros, Food, Discounter)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Arts, Flowers, Books
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Departement Stores (non-food)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Periodical Services
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Sightseeing/Attractions
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Hotels
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Bars/Restaurants
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                    <hr class="my-4">
-                                      <label class="mb-3">Shop/Event Concepts</label>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Sale (“Outlet/Retail”)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Concept Store (“Test a product/market/location”)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Product Event
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Promotion (Sampling, Fylering etc.)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-check pl-0 mb-3">
-                                        <label class="filter-check-container my-auto">Gastro (Restaurant/Bar)
-                                          <input type="checkbox">
-                                          <span class="checkmark"></span>
-                                        </label>
-                                      </div>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="submit" role="button" class="btn btn-block save-search-float-btn">Apply</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                            </div>
                         </div>
                         <div class="form-group col-xl-5 col-5 custom-control custom-switch custom-control-right text-center my-auto">
                           <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
@@ -281,7 +148,7 @@
                 <div id='map-mobile' style="height: 100%; width: 100%;"></div>
               </div>
             </div>
-          <div class="col-xl-7 col-md-7 col-sm-7 col-12 search-page-left-content">
+          <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12 search-page-left-content">
             <div class="search-page-left-content-full-wrapper">
                 <!-- Search Result Content -->
                 <div class="search-page-city-content">
@@ -590,6 +457,308 @@
       </div>
     </footer>
     <!-- Footer Section Ends Here -->
+
+
+
+    <!-- More Filter Lightbox -->
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+      <form action="#">
+        <div class="modal-dialog filter-modal-dialogue">
+          <div class="modal-content">
+            <div class="modal-header filter-modal-header">
+              <input type="reset" value="Clear all">
+              <h6 class="modal-title text-center" id="filterModalLabel">Filters (0)</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><span class="icon-close-light"></span></span>
+              </button>
+            </div>
+            <div class="modal-body filter-modal-body">
+              <label>Sort by</label>
+              <select name="" id="" class="selectpicker city-search-select">
+                <option value="">Recommended</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+              </select>
+                <hr class="my-4">
+              <label class="mb-3">Industries</label>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Leisure (Spa, Fitness, Bowling)
+                <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Fachmarkt (Non-Food)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Fashion
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Watches, Jewellry, Eyeglasses
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">(Home) Electronics
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Food Experience - Butcher, Bakery, Wine shop etc.
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Groceries (Migros, Food, Discounter)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Arts, Flowers, Books
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Departement Stores (non-food)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Periodical Services
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Sightseeing/Attractions
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Hotels
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Bars/Restaurants
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <hr class="my-4">
+              <label class="mb-3">Shop/Event Concepts</label>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Sale (“Outlet/Retail”)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Concept Store (“Test a product/market/location”)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Product Event
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Promotion (Sampling, Fylering etc.)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Gastro (Restaurant/Bar)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" role="button" class="btn btn-block save-search-float-btn">Apply</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- More Filter Lightbox -->
+
+    <!-- More Filter for Mobile Lightbox -->
+    <div class="modal fade" id="filterMobileModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+      <form action="#">
+        <div class="modal-dialog filter-modal-dialogue">
+          <div class="modal-content">
+            <div class="modal-header filter-modal-header">
+              <input type="reset" value="Clear all">
+              <h6 class="modal-title text-center" id="filterModalLabel">Filters (0)</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><span class="icon-close-light"></span></span>
+              </button>
+            </div>
+            <div class="modal-body filter-modal-body">
+              <label>Sort by</label>
+              <select name="" id="" class="selectpicker city-search-select">
+                <option value="">Recommended</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+              </select>
+                <hr class="my-4">
+              <label class="mb-3">Industries</label>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Leisure (Spa, Fitness, Bowling)
+                <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Fachmarkt (Non-Food)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Fashion
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Watches, Jewellry, Eyeglasses
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">(Home) Electronics
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Food Experience - Butcher, Bakery, Wine shop etc.
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Groceries (Migros, Food, Discounter)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Arts, Flowers, Books
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Departement Stores (non-food)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Periodical Services
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Sightseeing/Attractions
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Hotels
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Bars/Restaurants
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <hr class="my-4">
+              <label class="mb-3">Shop/Event Concepts</label>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Sale (“Outlet/Retail”)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Concept Store (“Test a product/market/location”)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Product Event
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Promotion (Sampling, Fylering etc.)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-check pl-0 mb-3">
+                <label class="filter-check-container my-auto">Gastro (Restaurant/Bar)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <hr class="my-4">
+              <select name="" id="" class="selectpicker city-search-select">
+                <option value="">Any date</option>
+                <option value="">Any other</option>
+                <option value="">Anymore other</option>
+              </select>
+              <hr class="my-4">
+              <select name="" id="" class="selectpicker city-search-select">
+                <option value="">Any amount</option>
+                <option value="">5 000 - 10 000 CHF</option>
+                <option value="">15 000 - 20 000 CHF</option>
+              </select>
+              <hr class="my-4">
+              <select name="" id="" class="selectpicker city-search-select">
+                <option value="">0 - 3500 sq ft</option>
+                <option value="">3500 - 7000 sq ft</option>
+                <option value="">7000 - 12 000 sq ft</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" role="button" class="btn btn-block save-search-float-btn">Apply</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- More Filter for Mobile Lightbox -->
 
 
 
